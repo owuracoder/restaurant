@@ -1,0 +1,370 @@
+@font-face {
+  font-family: 'roboto';
+  src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+  font-weight: 600;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.banner-container {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(./images/banner-img.jpeg);
+  width: 100vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.logo-brand {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 60%;
+}
+
+.logo-brand a {
+  text-decoration: none;
+  color: #ffff;
+}
+
+.logo-brand a i {
+  padding-right: 10px;
+}
+
+.logo-brand #text {
+  position: relative;
+  bottom: 10px;
+  font-size: 15px;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 2.5px;
+}
+
+.mem-section {
+  color: #ffff;
+  font-family: 'roboto';
+  font-weight: 700px;
+  display: flex;
+  font-size: 14px;
+  display: flex;
+  width: 40%;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.mem-section h3 {
+  padding: 5px;
+}
+
+.mem-section .active {
+  font-size: 14px;
+  border-radius: 20px;
+  padding: 10px;
+  background: #ffff;
+  color: #494949;
+  margin: 0px 0px 0px 15px;
+  width: 100px;
+  text-align: center;
+  transition: 0.4s ease-in-out;
+}
+
+.active:hover {
+  background: rgb(226, 207, 207);
+}
+
+.mem-section a {
+  text-decoration: none;
+  color: #494949;
+  letter-spacing: 1.2px;
+  font-size: 17px;
+}
+
+.top-content {
+  display: flex;
+  width: 100%;
+  padding: 20px 20px 20px 0px;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.center-content {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  align-items: center;
+  justify-content: center;
+  color: #ffff;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(./images/banner-img.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10px;
+}
+
+.center-item {
+  width: 60%;
+  margin-bottom: 50px;
+}
+
+.center-content .center-item h3 {
+  font-size: 50px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.address-bar {
+  position: relative;
+}
+
+.address-bar .address {
+  width: 400px;
+  outline: none;
+  padding: 21px;
+  border: none;
+  border-radius: 30px;
+  text-indent: 25px;
+  font-size: 15px;
+}
+
+.address-bar .address::-webkit-input-placeholder {
+  font-size: 16px;
+  line-height: 3;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.address-bar .arrow-box,
+.loc {
+  display: inline-block;
+  position: absolute;
+  top: 5px;
+  left: 88%;
+  padding: 15px;
+  background: #494949;
+  border-radius: 50%;
+  z-index: 30;
+}
+
+.loc {
+  left: 0px;
+  top: 0px;
+  background: none;
+  color: #494949;
+}
+
+.loc .fa-map-marker-alt {
+  padding: 5px;
+}
+
+.food-disp-1,
+.food-disp-2 {
+  display: flex;
+  width: 100%;
+  height: 500px;
+  padding: 20px;
+  background-color: #ffff;
+  overflow: visible;
+}
+
+.food-disp-2 {
+  flex-direction: row-reverse;
+  background: #f6dce7;
+  height: 650px;
+  padding: 80px 20px 20px 20px;
+  overflow: hidden;
+}
+
+.text-description-1,
+.text-description-2 {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 10px 0px 10px;
+}
+
+.text-description-2 {
+  padding-left: 20px;
+}
+
+.img-desc,
+.img-desc-1 {
+  flex: 1.5;
+  background: url(./images/food-1.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 25px;
+  height: 525px;
+  z-index: 30;
+}
+
+.img-desc-1 {
+  flex: 1.2;
+  background: url(./images/img-2.jpeg);
+  background-size: cover;
+}
+
+.food-disp-1 .text-1 h3,
+.head {
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+.food-disp-1 .text-1 p,
+.desc {
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.food-disp-1 .text-1 button,
+.btn {
+  border-radius: 25px;
+  padding: 15px 25px 15px 25px;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  background: #ee5256;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #ffff;
+  background: #191919;
+  padding: 20px;
+}
+
+.footer h3 {
+  margin-bottom: 5px;
+  letter-spacing: 1.5px;
+}
+
+.footer li {
+  padding: 5px;
+  font-size: 12px;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.foot-items:last-child {
+  text-align: center;
+}
+
+.header {
+  width: 100%;
+  padding: 30px 0px 0px 30px;
+  margin-bottom: 20px;
+}
+
+.disp-row {
+  padding: 0px 20px 0px 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.card {
+  width: 31vw;
+  height: 50vh;
+  transition: 0.4s;
+}
+
+.card .img-edit {
+  width: 100%;
+  height: 90%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+}
+
+.card:hover {
+  cursor: pointer;
+  filter: brightness(50%);
+}
+
+.food-img-1 {
+  background: url(./images/food-show-1.jpeg);
+}
+
+.food-img-2 {
+  background: url(./images/food-show-2.jpeg);
+}
+
+.food-img-3 {
+  background: url(./images/food-show-3.jpeg);
+}
+
+.food-img-4 {
+  background: url(./images/food-show-4.jpeg);
+}
+
+.food-img-5 {
+  background: url(./images/food-show-5.jpeg);
+}
+.food-img-6 {
+  background: url(./images/food-show-6.jpeg);
+}
+
+.card .food-det {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.card .food-det .name {
+  font-size: 15px;
+  letter-spacing: 0.7px;
+  font-weight: 100;
+}
+
+/* styling for contact us page */
+.contact-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0px 20px 0px;
+}
+
+.contact-head {
+  margin-bottom: 20px;
+  letter-spacing: 1.1px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.contact-sub {
+  margin-bottom: 20px;
+  font-weight: 100;
+  text-align: center;
+  letter-spacing: 1.05;
+}
+
+.contact-btn {
+  padding: 15px 100px 15px 100px;
+  border: none;
+  background: black;
+  color: #fff;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 100;
+}
